@@ -1,0 +1,171 @@
+@import url("https://fonts.cdnfonts.com/css/raleway-5");
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+:root {
+  --Dark: #00233c;
+  --Primary: #0269b3;
+  --Accent: #80e8ff;
+  --AccentLight: #ecf9ff;
+  --Border: #ddd;
+  --Text: #333;
+  --Invert: #fff;
+  --Disabled: #d3d3d3;
+}
+.navbar {
+  position: fixed;
+  width: 100%;
+}
+.text-invert {
+  color: var(--Invert);
+}
+.hero {
+  background-color: var(--Dark);
+  color: var(--Invert);
+}
+/* h1.heading */
+.hero h1 {
+  color: var(--Invert);
+}
+
+span.hero-title {
+  color: var(--Accent);
+}
+
+.hero-item-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-primary {
+  background-color: var(--Primary);
+  color: var(--Invert);
+}
+
+.btn-tertiary {
+  background-color: var(--Invert);
+  color: var(--Primary);
+  font-weight: bold;
+}
+
+.btn-tertiary:hover {
+  background-color: var(--Accent);
+  color: var(--Dark);
+}
+
+.wrapper-content {
+  display: grid;
+  gap: 40px;
+}
+
+.card-item {
+  display: flex;
+  gap: 10px;
+  padding: 1rem;
+  border: 1px solid var(--Border);
+  border-radius: 12px;
+}
+
+.card-item p {
+  margin: 0;
+}
+
+.list-feature {
+  display: grid;
+  gap: 1rem;
+}
+
+img.img-feature {
+  border-radius: 12px;
+}
+
+.invert-card {
+  background-color: var(--Invert);
+  padding: 1rem;
+  border-radius: 0.75rem;
+  border: none;
+}
+h3 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .desktop-view {
+    display: block;
+  }
+  .mobile-view {
+    display: none;
+  }
+  .hero-left {
+    padding: 140px 80px;
+  }
+  img.img-feature {
+    width: 450px;
+    height: 494px;
+  }
+  .feature {
+    display: flex;
+    gap: 80px;
+    padding: 100px;
+  }
+  .explore {
+    padding: 100px;
+  }
+  .group-explore-cards {
+    justify-content: center;
+  }
+}
+
+/* mobile style  */
+@media (max-width: 768px) {
+  .desktop-view {
+    display: none;
+  }
+  .mobile-view {
+    display: block;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .hero img {
+    width: 100%;
+  }
+  .wrapper-group {
+    padding: 3rem 1.25rem;
+  }
+  .feature,
+  .explore {
+    padding: 64px 20px;
+  }
+  .group-explore-cards {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+  .invert-card {
+    min-width: 18rem;
+  }
+}
+
+.explore {
+  background-image: url("assets/BackgroundImage.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--Invert);
+}
+
+.explore-content {
+  text-align: center;
+}
+
+.group-explore-cards {
+  display: flex;
+  gap: 1rem;
+  /* flex-wrap: wrap; */
+}
