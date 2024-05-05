@@ -95,6 +95,10 @@ h3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+  .hero-right img {
+    height: 100%;
+    width: 100%;
+  }
   .desktop-view {
     display: block;
   }
