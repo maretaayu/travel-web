@@ -13,6 +13,20 @@ body {
   --Invert: #fff;
   --Disabled: #d3d3d3;
 }
+
+.sunset {
+  --Dark: #3c332a;
+  --Primary: #8c6251;
+  --Accent: #eec294;
+  --AccentLight: #ecffef;
+}
+
+.earth {
+  --Dark: #2a3c3c;
+  --Primary: #51758c;
+  --Accent: #e8ee94;
+  --AccentLight: #f0f9ff;
+}
 .navbar {
   position: fixed;
   width: 100%;

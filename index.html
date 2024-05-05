@@ -58,7 +58,13 @@
               Search
             </button>
           </form> -->
-          <button class="btn btn-primary">Register Now</button>
+          <header>
+            <select id="theme-select">
+              <option value="main">Main</option>
+              <option value="sunset">Sunset</option>
+              <option value="earth">Earth</option>
+            </select>
+          </header>
         </div>
       </div>
     </nav>
@@ -201,5 +207,14 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const themeSelect = document.getElementById("theme-select");
+      const body = document.body;
+
+      themeSelect.addEventListener("change", function () {
+        const selectedTheme = this.value;
+        body.className = selectedTheme;
+      });
+    </script>
   </body>
 </html>
